@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="acikmavi">#f0f8ff</color>
+    <color name="anarenk">#228b22</color>
+    <color name="hataletbeyaz">#f8f8ff</color>
+
+</resources>

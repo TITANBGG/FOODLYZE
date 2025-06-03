@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/hataletbeyaz"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Barkodsayfasi">
+
+    <Button
+        android:id="@+id/scanButton"
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/barkodbtn"
+        android:fontFamily="@font/poppingfont"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="20dp"
+        android:textAllCaps="false"
+        android:text="@string/barkod_tarabtn"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/scanButton"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/hataletbeyaz"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                android:layout_height="230dp">
+                <ImageView
+                    android:id="@+id/urunresmi"
+                    android:src="@drawable/photoicon"
+                    android:layout_gravity="center|start"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="fitCenter"
+                   />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="91dp"
+                        android:id="@+id/nutriscoredurumu"
+                        android:layout_height="52dp"
+                        android:src="@drawable/nutiscorea"
+                        />
+                    <ImageView
+                        android:layout_width="61dp"
+                        android:id="@+id/helalharamdurum"
+                        android:layout_height="52dp"
+                        android:src="@drawable/helal"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="152dp"
+                    android:layout_gravity="center|top|end"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/urunadi"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/logoyazistili"
+                        android:text="ürün adı"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppingfont"
+                        android:text="miktar"
+                        android:id="@+id/miktar"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:background="@drawable/bacgroundlayout"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/baslik"
+                        android:layout_height="wrap_content"
+                        android:text="Ürün özellikleri"
+                        android:textSize="20dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppingfont"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/marka"
+                        android:text="marka"
+                        android:textSize="15dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppingfont"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/malzemeler_metni"
+                        android:text="malzemeler_metni"
+                        android:textSize="15dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppingfont"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/malzeme_etiket"
+                        android:text="marka etiketi"
+                        android:textSize="15dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppingfont"/>
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/urunicindekiler_gorsel"
+                        android:src="@drawable/photoicon"
+                        android:layout_gravity="center"
+
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:elevation="10dp"
+                android:background="@drawable/bacgroundlayout"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/beslenme_verileribaslik"
+                    android:layout_height="wrap_content"
+                    android:text="Beslenme Verileri"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppingfont"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/energy"
+                    android:text="energy"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/proteins"
+                    android:text="proteins"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/carbohydrates"
+                    android:text="carbohydrates"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sugars"
+                    android:text="sugars"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fat"
+                    android:text="fat"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/doymusyag"
+                    android:text="saturated-fat"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/calcium"
+                    android:text="calcium"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuz"
+                    android:text="tuz oranı"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lif"
+                    android:text="lif oranı"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:elevation="10dp"
+                android:background="@drawable/bacgroundlayout"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/beslenme_puanibaslik"
+                    android:layout_height="wrap_content"
+                    android:text="Alerjen Analizi"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppingfont"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/alerjen"
+                    android:text="alerjen"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppingfont"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/resultTextView"
+                    android:layout_width="385dp"
+                    android:layout_height="271dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="20dp"
+                    android:text="Scan a barcode"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="28dp" />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

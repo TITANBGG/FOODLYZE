@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <!-- Barkod tarama butonu -->
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/buton_tasarim"
+        android:fontFamily="@font/poppingfont"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="20dp"
+        android:textAllCaps="false"
+        android:text="@string/analizsayfasina_gitbtn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/logolinearlayout"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="40dp"
+
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logogorsel" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppingfont"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Foodlyze" />
+
+    </LinearLayout>
+   <!-- reklam için yrılan kısım -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/sliderlayaout"
+        android:layout_height="170dp"
+        android:layout_below="@id/logolinearlayout"
+
+        app:cardElevation="0dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/imageslider"
+            app:iss_period="2000"
+            app:iss_auto_cycle="true"
+            app:iss_delay="2000"
+            app:iss_corner_radius="10" app:iss_title_background="@drawable/gradient" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/yemektarifiButton"
+        android:layout_below="@id/sliderlayaout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/yemekbtn"
+        android:fontFamily="@font/poppingfont"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="20dp"
+        android:textAllCaps="false"
+        android:text="@string/yemektarifi_btn" />
+
+
+
+
+    <!-- Barkod sonuçlarını gösterecek TextView -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan a barcode"
+        android:visibility="invisible"
+        android:paddingTop="20dp" />
+
+</RelativeLayout>

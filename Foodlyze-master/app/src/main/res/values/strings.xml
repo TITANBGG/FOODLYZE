@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Foodlyze</string>
+    <string name="analizsayfasina_gitbtn">Analiz Sayfasına Git</string>
+    <string name="barkod_tarabtn">Barkod Tara</string>
+    <string name="yemektarifi_btn">AI den Yemek Tarifi Al</string>
+
+</resources>
