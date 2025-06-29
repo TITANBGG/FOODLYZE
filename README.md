@@ -28,6 +28,10 @@ Foodlyze is a mobile application designed to revolutionize how people interact w
 ![image](https://github.com/user-attachments/assets/eff8c962-9909-4f62-a559-3b0e8d129ca0)
 ![image](https://github.com/user-attachments/assets/3693cc89-4322-402e-a771-ecfc45e19b34)
 ![image](https://github.com/user-attachments/assets/f23f4e8e-cda1-49af-827d-3ec2e8824729)
+![WhatsApp Görsel 2025-05-01 saat 13 37 27_508036c4](https://github.com/user-attachments/assets/49914c35-9632-42e6-8d91-00c576ceb42f)
+![WhatsApp Görsel 2025-05-28 saat 16 44 20_8c327574](https://github.com/user-attachments/assets/4f779b98-15b1-40d7-b1aa-cbcc525b9c98)
+![WhatsApp Görsel 2025-06-11 saat 20 05 09_26612f2c](https://github.com/user-attachments/assets/363aee9c-d97c-4684-a055-a123c4b126f6)
+![WhatsApp Görsel 2025-06-11 saat 20 19 31_18c2dda0](https://github.com/user-attachments/assets/2727c61b-5395-4201-a070-27e360ea6e0b)
 
 
 
